@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+.custom-radial-gradient {
+  background: radial-gradient(
+    124.23% 171.99% at 100% -3.39%,
+    #1f4247 0%,
+    #0d1d23 56.18%,
+    #09141a 100%
+  );
+}
+
+.date-custom::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+.date-custom::placeholder {
+  color: rgb(255 255 255 / 0.3);
+}
