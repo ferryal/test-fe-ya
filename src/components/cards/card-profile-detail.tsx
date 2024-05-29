@@ -58,7 +58,7 @@ function CardProfileDetail({
     if (type === 'about') {
       setShowForm(!showForm);
     } else {
-      router.push('/dashboard/interest');
+      router.push('/profile/interest');
     }
   }, [showForm, setShowForm, router, type]);
 
